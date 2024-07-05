@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Sora", sans-serif;
+}
+
+.stroke {
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+@layer components {
+  .kotakSkils {
+    @apply outline xs:h-[160px] xs:w-[160px] h-[170px] w-[170px] md:h-[180px] md:w-[180px] lg:h-[186px] lg:w-[186px] justify-center flex items-center flex-col gap-5;
+  }
+}
