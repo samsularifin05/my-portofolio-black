@@ -1,7 +1,11 @@
+import { useScroll } from "./scrolProvider";
+
 const Testiimonial = () => {
+  const { testimoniRef } = useScroll();
+
   return (
     <div
-      id="testiomonial"
+      ref={testimoniRef}
       className="flex flex-col justify-between p-4 mt-8 lg:p-28"
     >
       <div

@@ -1,11 +1,19 @@
 import google from "../assets/google.svg";
+import { useScroll } from "./scrolProvider";
 
 const MyExperients = () => {
+  const { experienceRef } = useScroll();
+
   return (
-    <div className="w-screen h-auto py-12 bg-black lg:h-full" data-speed="0.16">
+    <div
+      ref={experienceRef}
+      id="my-experience"
+      className="w-screen h-auto py-12 bg-black lg:h-full"
+      data-speed="0.16"
+    >
       <div
         data-aos="flip-left"
-        className="flex justify-center gap-2 text-[28px] lg:text-[48px] text-white"
+        className="flex justify-center gap-2 text-[28px] lg:text-[48px] mt-10 text-white"
       >
         <p>My</p>
         <p className="font-mono font-extrabold">Experience</p>

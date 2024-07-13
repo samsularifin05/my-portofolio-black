@@ -1,14 +1,18 @@
 import project1 from "../assets/project1.png";
+import { useScroll } from "./scrolProvider";
 
 const MyProject = () => {
+  const { projectRef } = useScroll();
+
   return (
     <div
+      ref={projectRef}
       id="project"
       className="justify-center h-full gap-5 p-5 bg-black lg:w-screen lg:p-10"
     >
       <div
         data-aos="flip-left"
-        className="flex justify-center text-white font-sora text-[48px] gap-4"
+        className="flex justify-center text-[28px] text-white font-sora lg:text-[48px] mt-10 gap-4"
       >
         <p>My </p>
         <p className="font-extrabold">Project</p>

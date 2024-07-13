@@ -1,14 +1,24 @@
+import React from "react";
 import profilPeople from "../assets/profilPeople.svg";
+import { useScroll } from "./scrolProvider";
 
-const AboutMe = () => {
+const AboutMe: React.FC = () => {
+  const { aboutMeRef } = useScroll();
+
   return (
     <div
-      id="about"
-      className="flex items-center justify-center h-auto px-4 pb-10 lg:h-screen mt-28 lg:px-20 box-b"
+      id="about-me"
+      ref={aboutMeRef}
+      className="flex items-center justify-center h-auto px-4 pb-10 lg:h-screen mt-28 lg:px-20"
       data-speed="1"
     >
-      <div className="flex flex-col gap-20 lg:flex-row">
-        <img src={profilPeople} data-aos="flip-right" />
+      <div className="flex flex-col items-center gap-4 lg:flex-row">
+        <img
+          src={profilPeople}
+          data-aos="flip-right"
+          className="flex items-center justify-center lg:mt-12"
+          alt="Profile"
+        />
         <div className="flex flex-col font-mono ">
           <div className="text-[48px] flex flex-row gap-5" data-aos="fade-down">
             <p className="font-normal">About</p>

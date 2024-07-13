@@ -1,9 +1,13 @@
 import heroSection from "../assets/hero.svg";
+import { useScroll } from "./scrolProvider";
 
 const HeroSection = () => {
+  const { aboutMeRef } = useScroll();
+
   return (
     <div
-      id="hero-section"
+      id="#"
+      ref={aboutMeRef}
       className="flex flex-row items-center px-4 lg:w-screen lg:h-screen lg:py-0 lg:px-20"
     >
       <div className="w-[50rem] flex flex-col gap-2">

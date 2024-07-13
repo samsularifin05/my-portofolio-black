@@ -3,46 +3,28 @@ import HeroSection from "./component/heroSection";
 import MySkils from "./component/myskils";
 import MyExperients from "./component/myExperients";
 import AboutMe from "./component/aboutMe";
-import { useEffect } from "react";
-import SmoothScroll from "smooth-scroll";
+
 import MyProject from "./component/myProject";
-import Testiimonial from "./component/tesTimonial";
+import Contact from "./component/contact";
+import Testiimonial from "./component/testimonial";
+import Footer from "./component/footer";
+import { ScrollProvider } from "./component/scrolProvider";
 
 const App = () => {
-  const getOffset = (hash: string): number => {
-    switch (hash) {
-      case "#about":
-        return 60;
-      case "#skils":
-        return 200;
-      case "#project":
-        return 60;
-      case "#contact":
-        return 60;
-      default:
-        return 0;
-    }
-  };
-  // console.log();
-  useEffect(() => {
-    const hash = window.location.hash;
-    new SmoothScroll('a[href*="#"]', {
-      speed: 800,
-      speedAsDuration: true,
-      offset: getOffset(hash)
-    });
-  }, []);
-
   return (
-    <main className="flex flex-col w-screen ">
-      <Header />
-      <HeroSection />
-      <MySkils />
-      <MyExperients />
-      <AboutMe />
-      <MyProject />
-      <Testiimonial />
-    </main>
+    <ScrollProvider>
+      <main className="flex flex-col scroll-smooth">
+        <Header />
+        <HeroSection />
+        <AboutMe />
+        <MyExperients />
+        <MySkils />
+        <MyProject />
+        <Testiimonial />
+        <Contact />
+        <Footer />
+      </main>
+    </ScrollProvider>
   );
 };
 
