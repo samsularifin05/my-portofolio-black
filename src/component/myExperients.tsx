@@ -2,10 +2,7 @@ import google from "../assets/google.svg";
 
 const MyExperients = () => {
   return (
-    <div
-      className="w-screen h-auto py-10 bg-black lg:h-screen"
-      data-speed="0.16"
-    >
+    <div className="w-screen h-auto py-12 bg-black lg:h-full" data-speed="0.16">
       <div
         data-aos="flip-left"
         className="flex justify-center gap-2 text-[28px] lg:text-[48px] text-white"
@@ -29,11 +26,11 @@ const MyExperients = () => {
             <div className="mt-4">Nov 2019 - Present</div>
           </div>
           <p className="mt-4 text-[#D4D4D8]">
-            As a Senior Software Engineer at Google, I played a pivotal role in
-            developing innovative solutions for Google's core search algorithms.
-            Collaborating with a dynamic team of engineers, I contributed to the
-            enhancement of search accuracy and efficiency, optimizing user
-            experiences for millions of users worldwide.
+            Saya adalah seorang desainer yang penuh semangat dan saya
+            mengkhususkan diri dalam pengembangan full stack, yang berarti saya
+            memiliki keahlian dalam menggunakan React.js dan Node.js. Saya
+            sangat antusias dalam menciptakan produk digital yang memiliki aspek
+            teknis dan visual yang menarik.
           </p>
         </div>
         <div
@@ -51,11 +48,15 @@ const MyExperients = () => {
             <div className="mt-4">Nov 2019 - Present</div>
           </div>
           <p className="mt-4 text-[#D4D4D8]">
-            As a Senior Software Engineer at Google, I played a pivotal role in
-            developing innovative solutions for Google's core search algorithms.
-            Collaborating with a dynamic team of engineers, I contributed to the
-            enhancement of search accuracy and efficiency, optimizing user
-            experiences for millions of users worldwide.
+            Bagi saya, pengalaman pengguna yang baik, desain yang sempurna, dan
+            kode yang mudah dibaca dan berkinerja tinggi sangatlah penting. Saya
+            mulai belajar menjadi pengembang web pada tahun 2015, dan sejak itu,
+            saya terus berkembang dan menghadapi tantangan baru. Saya selalu
+            belajar teknologi terbaru yang ada. Sekarang, saya berada di usia
+            awal tiga puluhan dan telah menghabiskan 7 tahun dalam perjalanan
+            saya sebagai pengembang web. Saat ini, saya sedang membangun
+            aplikasi web yang canggih menggunakan teknologi modern seperti
+            Next.js, TypeScript, Nestjs, Tailwindcss, Supabase, dan banyak lagi.
           </p>
         </div>
         <div
@@ -73,11 +74,12 @@ const MyExperients = () => {
             <div className="mt-4">Nov 2019 - Present</div>
           </div>
           <p className="mt-4 text-[#D4D4D8]">
-            As a Senior Software Engineer at Google, I played a pivotal role in
-            developing innovative solutions for Google's core search algorithms.
-            Collaborating with a dynamic team of engineers, I contributed to the
-            enhancement of search accuracy and efficiency, optimizing user
-            experiences for millions of users worldwide.
+            Ketika saya tidak sibuk mengembangkan aplikasi, Anda bisa menemukan
+            saya di Twitter atau di Indie Hacker. Di sana, saya mengikuti
+            perjalanan startup awal atau menikmati waktu luang saya. Jika Anda
+            ingin mendapatkan informasi terkait teknologi dan melihat
+            proyek-proyek yang saya bangun secara publik, Anda bisa mengikuti
+            saya di Twitter atau melihat repositori saya di GitHub.
           </p>
         </div>
       </div>

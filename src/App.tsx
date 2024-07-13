@@ -5,6 +5,7 @@ import MyExperients from "./component/myExperients";
 import AboutMe from "./component/aboutMe";
 import { useEffect } from "react";
 import SmoothScroll from "smooth-scroll";
+import MyProject from "./component/myProject";
 
 const App = () => {
   useEffect(() => {
@@ -21,16 +22,7 @@ const App = () => {
       <MySkils />
       <MyExperients />
       <AboutMe />
-      <div
-        id="project"
-        className="w-screen h-screen p-10 bg-black"
-        data-speed="1.5"
-      >
-        <div className="flex justify-center text-white font-sora text-[48px] gap-4">
-          <p>My </p>
-          <p className="font-extrabold">Project</p>
-        </div>
-      </div>
+      <MyProject />
     </main>
   );
 };

@@ -19,27 +19,29 @@ const AboutMe = () => {
             className="text-[15px] font-sora font-normal gap-4 flex flex-col text-[#71717A]"
           >
             <div>
-              I'm a passionate, self-proclaimed designer who specializes in full
-              stack development (React.js & Node.js). I am very enthusiastic
-              about bringing the technical and visual aspects of digital
-              products to life. User experience, pixel perfect design, and
-              writing clear, readable, highly performant code matters to me.
+              Saya adalah seorang desainer yang penuh semangat dan saya
+              mengkhususkan diri dalam pengembangan full stack, yang berarti
+              saya memiliki keahlian dalam menggunakan React.js dan Node.js.
+              Saya sangat antusias dalam menciptakan produk digital yang
+              memiliki aspek teknis dan visual yang menarik. Bagi saya,
+              pengalaman pengguna yang baik, desain yang sempurna, dan kode yang
+              mudah dibaca dan berkinerja tinggi sangatlah penting.
             </div>
             <div>
-              I began my journey as a web developer in 2015, and since then,
-              I've continued to grow and evolve as a developer, taking on new
-              challenges and learning the latest technologies along the way.
-              Now, in my early thirties, 7 years after starting my web
-              development journey, I'm building cutting-edge web applications
-              using modern technologies such as Next.js, TypeScript, Nestjs,
-              Tailwindcss, Supabase and much more.
+              Saya mulai belajar menjadi pengembang web pada tahun 2019, dan
+              sejak itu, saya terus berkembang dan menghadapi tantangan baru.
+              Saya selalu belajar teknologi terbaru yang ada. Sekarang, saya
+              berada di usia awal tiga puluhan dan telah menghabiskan 4,5 tahun
+              dalam perjalanan saya sebagai pengembang web. Saat ini, saya
+              sedang membangun aplikasi web yang canggih menggunakan teknologi
+              modern seperti Next.js, TypeScript, Nestjs, Tailwindcss, Supabase,
+              dan banyak lagi.
             </div>
             <div>
-              When I'm not in full-on developer mode, you can find me hovering
-              around on twitter or on indie hacker, witnessing the journey of
-              early startups or enjoying some free time. You can follow me on
-              Twitter where I share tech-related bites and build in public, or
-              you can follow me on GitHub.
+              Ketika saya tidak sibuk mengembangkan aplikasi, Jika Anda ingin
+              mendapatkan informasi terkait teknologi dan melihat proyek-proyek
+              yang saya bangun secara publik, Anda bisa mengikuti saya di sosial
+              media saya atau melihat repositori saya di GitHub.
             </div>
           </div>
         </div>

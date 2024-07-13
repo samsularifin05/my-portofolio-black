@@ -4,13 +4,16 @@ const Header = () => {
   return (
     <div
       id="#"
-      className="flex flex-row justify-between w-full px-4 py-6 lg:px-20 "
+      className="sticky top-0 z-50 flex flex-row justify-between w-full px-4 py-4 bg-white shadow lg:px-20"
     >
       <a href="#" className="flex items-center justify-center gap-5">
         <img src={logo} />{" "}
-        <p className="font-bold font-sora text-[15px] lg:text-[20px]">
-          Samsul Arifin
-        </p>
+        <div className="flex flex-col">
+          <p className="font-bold font-sora text-[15px] lg:text-[20px]">
+            Samsul Arifin
+          </p>
+          <p className="text-[10px]">Frondend Developer</p>
+        </div>
       </a>
       <div className="items-center hidden gap-8 font-semibold font-sora lg:flex">
         <a href="#about">About Me</a>

@@ -7,12 +7,12 @@ import wordpress from "../assets/wordpress.svg";
 const MySkils = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center h-auto py-20 lg:h-screen lg:py-0"
+      className="flex flex-col items-center justify-center h-auto mt-10 mb-20 lg:mt-0"
       id="skils"
     >
       <div
+        data-aos="flip-left"
         className="flex justify-center  gap-2 text-[30px] lg:text-[48px]"
-        data-aos="fade-up"
       >
         <p className="font-normal font-sora ">My</p>{" "}
         <p className="font-extrabold font-sora">Skills</p>
