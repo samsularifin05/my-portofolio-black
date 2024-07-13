@@ -6,12 +6,30 @@ import AboutMe from "./component/aboutMe";
 import { useEffect } from "react";
 import SmoothScroll from "smooth-scroll";
 import MyProject from "./component/myProject";
+import Testiimonial from "./component/tesTimonial";
 
 const App = () => {
+  const getOffset = (hash: string): number => {
+    switch (hash) {
+      case "#about":
+        return 60;
+      case "#skils":
+        return 200;
+      case "#project":
+        return 60;
+      case "#contact":
+        return 60;
+      default:
+        return 0;
+    }
+  };
+  // console.log();
   useEffect(() => {
+    const hash = window.location.hash;
     new SmoothScroll('a[href*="#"]', {
       speed: 800,
-      speedAsDuration: true
+      speedAsDuration: true,
+      offset: getOffset(hash)
     });
   }, []);
 
@@ -23,6 +41,7 @@ const App = () => {
       <MyExperients />
       <AboutMe />
       <MyProject />
+      <Testiimonial />
     </main>
   );
 };
