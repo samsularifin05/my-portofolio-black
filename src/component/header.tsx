@@ -15,6 +15,8 @@ const Header = () => {
     scrollToPage(page, yOffset);
   };
 
+  const goUrl = (url: string) => window.open(url, "_blank");
+
   return (
     <div className="sticky top-0 z-50 flex flex-row justify-between w-full px-4 py-2 bg-white shadow lg:py-4 lg:px-20">
       <span
@@ -113,7 +115,15 @@ const Header = () => {
             } text-[20px]`}
           ></i>
         </div>
-        <button className="items-center justify-center hidden h-10 gap-2 font-semibold text-white bg-black rounded lg:flex w-36">
+        <button
+          onClick={() =>
+            goUrl(
+              "https://drive.google.com/drive/folders/10xw79NwrXF86xfvjz69KZ01nDZ-XMq46?usp=drive_link"
+            )
+          }
+          type="button"
+          className="items-center justify-center hidden h-10 gap-2 font-semibold text-white bg-black rounded lg:flex w-36"
+        >
           Resume <i className="fa-solid fa-download"></i>
         </button>
       </div>

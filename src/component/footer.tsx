@@ -7,7 +7,7 @@ const Footer = () => {
         <img src={Group} /> Samsul Arifin
       </div>
       <div className="flex items-center justify-center h-20 px-4 lg:px-20">
-        @2024
+        @{new Date().getFullYear()}
       </div>
     </div>
   );
