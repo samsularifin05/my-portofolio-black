@@ -44,7 +44,7 @@ const AboutMe: React.FC = () => {
               berada di usia awal tiga puluhan dan telah menghabiskan 4,5 tahun
               dalam perjalanan saya sebagai pengembang web. Saat ini, saya
               sedang membangun aplikasi web yang canggih menggunakan teknologi
-              modern seperti Next.js, TypeScript, Nestjs, Tailwindcss, Supabase,
+              modern seperti React.js, Next.js, TypeScript, Nestjs, Tailwindcss
               dan banyak lagi.
             </div>
             <div>

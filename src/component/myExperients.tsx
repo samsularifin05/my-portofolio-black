@@ -29,7 +29,7 @@ const MyExperients = () => {
           <div className="flex flex-col w-full h-auto lg:items-center lg:justify-between lg:flex-row ">
             <div className="flex flex-row items-center justify-between gap-4">
               <img src={google} className="w-10 h-10" />{" "}
-              <p>Lead Software Engineer at Google</p>
+              <p>PT Nagatech Sistem Integrator</p>
             </div>
             <div className="mt-4">Nov 2019 - Present</div>
           </div>
