@@ -6,7 +6,7 @@ import AboutMe from "./component/aboutMe";
 
 import MyProject from "./component/myProject";
 import Contact from "./component/contact";
-import Testiimonial from "./component/testimonial";
+// import Testiimonial from "./component/testimonial";
 import Footer from "./component/footer";
 import { ScrollProvider } from "./component/scrolProvider";
 
@@ -20,7 +20,7 @@ const App = () => {
         <MyExperients />
         <MySkils />
         <MyProject />
-        <Testiimonial />
+        {/* <Testiimonial /> */}
         <Contact />
         <Footer />
       </main>

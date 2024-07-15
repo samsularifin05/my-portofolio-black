@@ -1,13 +1,25 @@
-import project1 from "../assets/project1.png";
 import waClone from "../assets/wa-clone.png";
 import cuanGaget from "../assets/cuan-gadget.png";
 import tokopediaDesain from "../assets/tokopediaDesain.png";
 import adminShacdn from "../assets/adminShacdn.png";
 
 import { useScroll } from "./scrolProvider";
+import { useState } from "react";
 
+interface ModalInterFace {
+  isOpen: boolean;
+  img?: string;
+}
 const MyProject = () => {
   const { projectRef } = useScroll();
+  const [modal, setModal] = useState<ModalInterFace>({
+    isOpen: false,
+    img: ""
+  });
+
+  const openModal = (img: string) => setModal({ isOpen: true, img });
+  const closeModal = () => setModal({ isOpen: false, img: undefined });
+  const goUrl = (url: string) => window.open(url, "_blank");
 
   return (
     <div
@@ -26,7 +38,19 @@ const MyProject = () => {
         data-aos="zoom-in"
         className="flex flex-col items-center justify-between lg:p-16 lg:flex-row"
       >
-        <img src={waClone} className="w-[600px]" />
+        <div className="relative flex group">
+          <img src={waClone} className="w-[600px]" />
+          <div className="absolute inset-0 flex items-center justify-center gap-4 transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
+            <i
+              className="text-lg text-white cursor-pointer fa fa-eye"
+              onClick={() => openModal(waClone)}
+            />
+            <i
+              className="text-white cursor-pointer fa-regular fa-share-from-square"
+              onClick={() => goUrl("https://clonewa.netlify.app/")}
+            />
+          </div>
+        </div>
         <div className="flex flex-col gap-5 text-white lg:pl-10">
           <div className="text-[48px] font-extrabold">01</div>
           <div className="text-[32px] font-bold">Whatsapp Ui</div>
@@ -44,8 +68,18 @@ const MyProject = () => {
         data-aos="zoom-in"
         className="flex flex-col items-center justify-between lg:p-16 lg:flex-row"
       >
-        <div className="flex lg:hidden">
+        <div className="relative flex lg:hidden group">
           <img src={cuanGaget} className="w-[600px]" />
+          <div className="absolute inset-0 flex items-center justify-center gap-4 transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
+            <i
+              className="text-lg text-white cursor-pointer fa fa-eye"
+              onClick={() => openModal(cuanGaget)}
+            />
+            <i
+              className="text-white cursor-pointer fa-regular fa-share-from-square"
+              onClick={() => goUrl("https://cuangadget.netlify.app")}
+            />
+          </div>
         </div>
         <div className="flex flex-col gap-5 text-white">
           <div className="text-[48px] font-extrabold">02</div>
@@ -55,15 +89,37 @@ const MyProject = () => {
             menggunakan teknologi modern seperti React.js dan Tailwind CSS.
           </p>
         </div>
-        <div className="hidden lg:flex">
+        <div className="relative hidden lg:flex group">
           <img src={cuanGaget} className="w-[600px]" />
+          <div className="absolute inset-0 flex items-center justify-center gap-4 transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
+            <i
+              className="text-lg text-white cursor-pointer fa fa-eye"
+              onClick={() => openModal(cuanGaget)}
+            />
+            <i
+              className="text-white cursor-pointer fa-regular fa-share-from-square"
+              onClick={() => goUrl("https://cuangadget.netlify.app")}
+            />
+          </div>
         </div>
       </div>
       <div
         data-aos="zoom-in"
         className="flex flex-col items-center justify-between lg:flex-row lg:p-16"
       >
-        <img src={tokopediaDesain} className="w-[600px]" />
+        <div className="relative flex group">
+          <img src={tokopediaDesain} className="w-[600px]" />
+          <div className="absolute inset-0 flex items-center justify-center gap-4 transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
+            <i
+              className="text-lg text-white cursor-pointer fa fa-eye"
+              onClick={() => openModal(tokopediaDesain)}
+            />
+            <i
+              className="text-white cursor-pointer fa-regular fa-share-from-square"
+              onClick={() => goUrl("https://tokopedia-ui.netlify.app/")}
+            />
+          </div>
+        </div>
         <div className="flex flex-col gap-5 text-white lg:pl-10">
           <div className="text-[48px] font-extrabold">03</div>
           <div className="text-[32px] font-bold">Tokopedia Ui</div>
@@ -80,8 +136,22 @@ const MyProject = () => {
         data-aos="zoom-in"
         className="flex flex-col items-center justify-between lg:p-16 lg:flex-row"
       >
-        <div className="flex lg:hidden">
-          <img src={adminShacdn} className="w-[600px]" />
+        <div className="relative flex lg:hidden group">
+          <img
+            src={adminShacdn}
+            className="w-[600px]"
+            onClick={() => openModal(adminShacdn)}
+          />
+          <div className="absolute inset-0 flex items-center justify-center gap-4 transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
+            <i
+              className="text-lg text-white cursor-pointer fa fa-eye"
+              onClick={() => openModal(adminShacdn)}
+            />
+            <i
+              className="text-white cursor-pointer fa-regular fa-share-from-square"
+              onClick={() => goUrl("https://adminshacdn.netlify.app/")}
+            />
+          </div>
         </div>
         <div className="flex flex-col gap-5 text-white">
           <div className="text-[48px] font-extrabold">04</div>
@@ -91,10 +161,36 @@ const MyProject = () => {
             teknologi modern seperti React.js dan Tailwind CSS.
           </p>
         </div>
-        <div className="hidden lg:flex">
+        <div className="relative hidden lg:flex group">
           <img src={adminShacdn} className="w-[600px]" />
+          <div className="absolute inset-0 flex items-center justify-center gap-4 transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
+            <i
+              className="text-lg text-white cursor-pointer fa fa-eye"
+              onClick={() => openModal(adminShacdn)}
+            />
+            <i
+              className="text-white cursor-pointer fa-regular fa-share-from-square"
+              onClick={() => goUrl("https://adminshacdn.netlify.app/")}
+            />
+          </div>
         </div>
       </div>
+      <div className="flex items-center justify-center">
+        <button className="w-32 p-2 text-center bg-white rounded backdrop-blur-lg ">
+          More Project
+        </button>
+      </div>
+
+      {modal.isOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+          onClick={() => closeModal()}
+        >
+          <div className="p-4" data-aos="zoom-in">
+            <img src={modal.img} alt="Modal" className="w-[900px]" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

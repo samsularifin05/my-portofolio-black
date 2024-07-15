@@ -16,7 +16,7 @@ const HeroSection = () => {
         </div>
         <div className="mt-2" data-aos="fade-left">
           <div className="font-normal font-sora text-[25px] lg:text-[48px] flex flex-row gap-5">
-            <p className="font-normal ">Hello I’am</p>
+            <p className="font-normal ">Hallo Saya</p>
             <p className="font-extrabold ">Samsul Arifin.</p>
           </div>
           <div className="font-normal font-sora text-[25px] lg:text-[48px] flex flex-row gap-5">
@@ -24,7 +24,7 @@ const HeroSection = () => {
             <p className="font-extrabold text-white stroke">Developer.</p>
           </div>
           <div className="font-normal font-sora text-[25px] lg:text-[48px] flex flex-row gap-5">
-            <p className="font-normal">Baseed In</p>
+            <p className="font-normal">Lokasi di</p>
             <p className="font-extrabold">Bandung.</p>
           </div>
         </div>
