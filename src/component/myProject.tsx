@@ -1,7 +1,7 @@
-import waClone from "../assets/wa-clone.png";
-import cuanGaget from "../assets/cuan-gadget.png";
-import tokopediaDesain from "../assets/tokopediaDesain.png";
-import adminShacdn from "../assets/adminShacdn.png";
+import waClone from "../assets/portofolioweb/wa-clone.png";
+import cuanGaget from "../assets/portofolioweb/cuan-gadget.png";
+import tokopediaDesain from "../assets/portofolioweb/tokopediaDesain.png";
+import adminShacdn from "../assets/portofolioweb/adminShacdn.png";
 
 import { useScroll } from "./scrolProvider";
 import { useState } from "react";
