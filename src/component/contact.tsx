@@ -66,7 +66,9 @@ const Contact = () => {
             </div>
             <div className="font-extrabold lg:mt-36" data-aos="fade-up">
               <p>samsul026@gmail.com</p>
-              <p>628986969882</p>
+              <a href="http://wa.me/628986969882" target="_blank">
+                628986969882
+              </a>
             </div>
           </div>
         </div>
