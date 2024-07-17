@@ -87,7 +87,7 @@ export const listDataProject: ProjectInterFace[] = [
     postition: "RIGHT",
     img: ExportDataFile,
     url: "https://www.npmjs.com/package/exportdatafile",
-    tag: ["Typescript.js"],
+    tag: ["Typescript"],
     deskripsi:
       "Modul ExportData adalah sebuah dependencies untuk mengelola data menjadi sebuah laporan seperti PDF,EXCEL"
   },
@@ -96,7 +96,7 @@ export const listDataProject: ProjectInterFace[] = [
     postition: "LEFT",
     img: TimeKeeping,
     url: "#",
-    tag: ["React.js", "Boostrap 5", "Typescript.js"],
+    tag: ["React.js", "Boostrap 5", "Typescript"],
     deskripsi:
       "Aplikasi ini di buat bertujuan untuk mengelola absensi karyawan, kasbon dan payroll"
   },
@@ -105,7 +105,7 @@ export const listDataProject: ProjectInterFace[] = [
     postition: "RIGHT",
     img: Geka,
     url: "#",
-    tag: ["React.js", "Boostrap 5", "Typescript.js"],
+    tag: ["React.js", "Boostrap 5", "Typescript"],
     deskripsi: "Aplikasi ini di buat bertujuan untuk mengelola gadai"
   }
 ];
