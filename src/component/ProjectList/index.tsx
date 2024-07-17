@@ -49,7 +49,7 @@ const ProjectList = (props: ProjectInterFace) => {
             </div>
           </div>
           <div className="flex flex-col gap-5 text-white lg:pl-10">
-            <div className="text-[48px] font-extrabold">{no}</div>
+            <div className="text-[48px] font-extrabold">0{no}</div>
             <div className="text-[32px] font-bold">{judul}</div>
             <p className="text-[#71717A] lg:w-[35rem]">{deskripsi}</p>
           </div>
@@ -75,7 +75,9 @@ const ProjectList = (props: ProjectInterFace) => {
             </div>
           </div>
           <div className="flex flex-col gap-5 text-white">
-            <div className="text-[48px] font-extrabold">{no}</div>
+            <div className="text-[48px] font-extrabold">
+              {no ? (no > 9 ? no : `0${no}`) : ""}
+            </div>
             <div className="text-[32px] font-bold">{judul}</div>
             <p className="text-[#71717A] lg:w-[35rem]">{deskripsi}</p>
           </div>
