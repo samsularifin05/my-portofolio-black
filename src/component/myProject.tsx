@@ -1,10 +1,15 @@
 import { useScroll } from "./scrolProvider";
 import ProjectList from "./ProjectList";
 import { listDataProject } from "./ProjectList/projectList";
+import { useState } from "react";
 
 const MyProject = () => {
   const { projectRef } = useScroll();
+  const [visibleProjects, setVisibleProjects] = useState(2);
 
+  const loadMore = () => {
+    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 3); // Load 3 more projects on each click
+  };
   return (
     <div
       ref={projectRef}
@@ -18,21 +23,20 @@ const MyProject = () => {
         <p>My </p>
         <p className="font-extrabold">Project</p>
       </div>
-
-      {listDataProject.map((list, index) => {
-        return (
-          <ProjectList
-            key={index + 1}
-            no={index + 1}
-            img={list.img}
-            judul={list.judul}
-            deskripsi={list.deskripsi}
-            url={list.url}
-            postition={list.postition}
-            tag={list.tag}
-          />
-        );
+      {listDataProject.slice(0, visibleProjects).map((list, index) => {
+        return <ProjectList key={index + 1} project={list} />;
       })}
+      HAI
+      {visibleProjects < listDataProject.length && (
+        <div className="flex justify-center w-full">
+          <button
+            className="flex justify-center p-2 bg-white rounded"
+            onClick={loadMore}
+          >
+            Load More
+          </button>
+        </div>
+      )}
     </div>
   );
 };

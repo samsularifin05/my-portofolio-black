@@ -1,8 +1,6 @@
 import nestJs from "../assets/icon-nest.svg";
 import socketIo from "../assets/icon-socket.svg";
 import tailwind from "../assets/tailwind.svg";
-import reactIc from "../assets/react.svg";
-import wordpress from "../assets/wordpress.svg";
 import { useScroll } from "./scrolProvider";
 
 const MySkils = () => {
@@ -28,7 +26,7 @@ const MySkils = () => {
           <i className=" fa-brands fa-github text-[40px]"></i>
           Git
         </div>
-        <div className="text-white bg-black kotakSkils ">
+        <div className="kotakSkils">
           <i className="fa-brands fa-js text-[40px]"></i>
           Javascript
         </div>
@@ -37,11 +35,11 @@ const MySkils = () => {
           Tailwind
         </div>
         <div className="kotakSkils">
-          <img src={reactIc} className="h-10" />
+          <i className="fa-brands fa-react text-[40px]"></i>
           React Js
         </div>
         <div className="kotakSkils">
-          <img src={reactIc} className="h-10" />
+          <i className="fa-brands fa-react text-[40px]"></i>
           React Native
         </div>
         <div className="kotakSkils">
@@ -57,7 +55,7 @@ const MySkils = () => {
           Laravel
         </div>
         <div className="kotakSkils">
-          <img src={wordpress} className="h-10" />
+          <i className="fa-brands fa-wordpress text-[40px]"></i>
           Wordpress
         </div>
         <div className="kotakSkils">
