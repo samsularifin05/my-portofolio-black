@@ -14,6 +14,7 @@ import Gethering from "../../assets/portofolioweb/gethering.png";
 import Kencana from "../../assets/portofolioweb/kencana.png";
 import Ud from "../../assets/portofolioweb/ud.png";
 import MamangRamen from "../../assets/portofolioweb/mamangRamen.png";
+import Fortres from "../../assets/portofolioweb/fortres.png";
 
 export interface ProjectInterFace {
   no?: string;
@@ -183,5 +184,15 @@ export const listDataProject: ProjectInterFace[] = [
     url: "https://mamang-ramen.netlify.app/",
     tag: ["React Js", "Typescript", "Tailwind"],
     deskripsi: "Proyek ini bertujuan untuk menduplikasi aplikasi ramen bajuri"
+  },
+  {
+    no: "15",
+    judul: "Fortress",
+    postition: "LEFT",
+    img: Fortres,
+    url: "#",
+    tag: ["React Js", "Typescript"],
+    deskripsi:
+      "Proyek ini bertujuan untuk mengembangkan aplikasi web Fortress (Pintu Baja), yang dirancang untuk memudahkan manajemen stok, penjualan, retur, dan purchase order (PO) dalam satu platform terintegrasi. Fortress akan membantu perusahaan dalam mengoptimalkan rantai pasokan mereka, meningkatkan efisiensi operasional, dan menyediakan informasi yang akurat dan real-time."
   }
 ];
