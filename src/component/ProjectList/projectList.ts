@@ -1,3 +1,9 @@
+import babyshop from "../../assets/portofolioweb/babyshop.png";
+import erental from "../../assets/portofolioweb/e-rental.png";
+import jurnal1 from "../../assets/portofolioweb/jurnal1.png";
+import jurnal2 from "../../assets/portofolioweb/jurnal2.png";
+import nexum from "../../assets/portofolioweb/nexum.png";
+import pos from "../../assets/portofolioweb/pos.png";
 import waClone from "../../assets/portofolioweb/wa-clone.png";
 import cuanGaget from "../../assets/portofolioweb/cuan-gadget.png";
 import tokopediaDesain from "../../assets/portofolioweb/tokopediaDesain.png";
@@ -194,5 +200,65 @@ export const listDataProject: ProjectInterFace[] = [
     tag: ["React Js", "Typescript"],
     deskripsi:
       "Proyek ini bertujuan untuk mengembangkan aplikasi web Fortress (Pintu Baja), yang dirancang untuk memudahkan manajemen stok, penjualan, retur, dan purchase order (PO) dalam satu platform terintegrasi. Fortress akan membantu perusahaan dalam mengoptimalkan rantai pasokan mereka, meningkatkan efisiensi operasional, dan menyediakan informasi yang akurat dan real-time."
+  },
+  {
+    no: "16",
+    judul: "Babyshop App",
+    postition: "RIGHT",
+    img: babyshop,
+    url: "#",
+    tag: ["React.Js", "Typescript", "Tailwind", "Laravel"],
+    deskripsi:
+      "Aplikasi toko perlengkapan bayi online yang memudahkan pencarian dan pembelian produk bayi secara praktis dan aman."
+  },
+  {
+    no: "17",
+    judul: "E-Rental",
+    postition: "LEFT",
+    img: erental,
+    url: "#",
+    tag: ["React.Js", "Typescript", "Tailwind", "Laravel"],
+    deskripsi:
+      "Platform penyewaan barang secara online dengan fitur pencarian, booking, dan pembayaran terintegrasi."
+  },
+  {
+    no: "18",
+    judul: "Jurnal Keuangan 1",
+    postition: "RIGHT",
+    img: jurnal1,
+    url: "#",
+    tag: ["React.Js", "Typescript", "Tailwind", "Php"],
+    deskripsi:
+      "Aplikasi pencatatan keuangan sederhana untuk UMKM, memudahkan pelacakan pemasukan dan pengeluaran."
+  },
+  {
+    no: "19",
+    judul: "Jurnal Keuangan 2",
+    postition: "LEFT",
+    img: jurnal2,
+    url: "#",
+    tag: ["React.Js", "Typescript", "Tailwind", "Php"],
+    deskripsi:
+      "Versi lanjutan aplikasi jurnal keuangan dengan fitur laporan dan grafik keuangan."
+  },
+  {
+    no: "20",
+    judul: "Nexum App",
+    postition: "RIGHT",
+    img: nexum,
+    url: "#",
+    tag: ["Wordpress"],
+    deskripsi:
+      "Aplikasi manajemen proyek dan kolaborasi tim berbasis web untuk meningkatkan produktivitas kerja."
+  },
+  {
+    no: "21",
+    judul: "POS System",
+    postition: "LEFT",
+    img: pos,
+    url: "#",
+    tag: ["React.Js", "Typescript", "Tailwind", "Laravel"],
+    deskripsi:
+      "Sistem Point of Sale (POS) modern untuk toko retail, mendukung transaksi, stok, dan laporan penjualan."
   }
 ];
